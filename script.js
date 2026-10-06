@@ -42,6 +42,8 @@ function updateMix() {
   document.getElementById("mixPowder").textContent = powder + " g";
   document.getElementById("mixWater").textContent = water + " ml";
   document.getElementById("mixFill").style.height = (ml / 2000) * 100 + "%";
+  // price: €5 per kg of powder
+  document.getElementById("mixCost").textContent = "€" + ((powder / 1000) * 5).toFixed(2);
 }
 mixRange.addEventListener("input", updateMix);
 updateMix();

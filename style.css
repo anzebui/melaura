@@ -75,7 +75,17 @@ a { color: inherit; text-decoration: none; }
 .hero-actions { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
 
 /* product pack illustration */
-.hero-visual { display: flex; justify-content: center; }
+.hero-visual { display: flex; flex-direction: column; align-items: center; gap: 28px; }
+
+/* QR card — only shown on bigger screens */
+.qr-card {
+  display: flex; align-items: center; gap: 16px; max-width: 340px;
+  padding: 14px 18px 14px 14px; background: var(--paper);
+  border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.qr-card img { width: 110px; height: 110px; border-radius: 10px; flex-shrink: 0; background: #fff; }
+.qr-card strong { font-family: "Fraunces", serif; color: var(--green); font-size: 1.1rem; }
+.qr-card p { color: var(--muted); font-size: 0.88rem; line-height: 1.45; margin-top: 4px; }
 .pack {
   width: 240px; padding: 24px 22px 20px; text-align: center;
   background: linear-gradient(180deg, var(--paper), #f0ebe1);
@@ -144,6 +154,24 @@ a { color: inherit; text-decoration: none; }
   position: relative; overflow: hidden; background: #fff;
 }
 .glass-mini-fill { position: absolute; bottom: 0; left: 0; right: 0; background: #fffdf7; box-shadow: inset 0 2px 0 #ece6da; transition: height .3s; }
+
+.mix-cost { text-align: center; margin-top: 16px; color: var(--muted); font-size: 0.92rem; }
+.mix-cost strong { color: var(--green); }
+
+/* price */
+.price {
+  display: grid; grid-template-columns: 1fr 1.4fr; gap: 30px; align-items: center;
+  margin-top: 30px; padding: 32px; border-radius: var(--radius);
+  background: var(--green); color: var(--paper);
+}
+.price-label { font-size: 0.8rem; letter-spacing: .1em; text-transform: uppercase; opacity: .75; font-weight: 600; }
+.price-num { font-family: "Fraunces", serif; font-size: 3.4rem; font-weight: 600; line-height: 1.1; margin: 4px 0 6px; }
+.price-num span { font-size: 1.3rem; opacity: .8; }
+.price-main p { opacity: .85; font-size: 0.95rem; }
+.price-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.price-facts div { background: rgba(255,255,255,.1); border-radius: 14px; padding: 16px; text-align: center; }
+.price-facts strong { display: block; font-family: "Fraunces", serif; font-size: 1.35rem; }
+.price-facts span { font-size: 0.82rem; opacity: .8; }
 
 /* chips */
 .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
@@ -236,7 +264,8 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 900px) {
   .cards-4 { grid-template-columns: repeat(2, 1fr); }
   .cards-3 { grid-template-columns: repeat(2, 1fr); }
-  .split, .principles { grid-template-columns: 1fr; }
+  .split, .principles, .price { grid-template-columns: 1fr; }
+  .price { text-align: center; }
   .roadmap { grid-template-columns: 1fr 1fr; row-gap: 30px; }
   .roadmap::before { display: none; }
 }
@@ -251,9 +280,12 @@ a { color: inherit; text-decoration: none; }
   .hero { grid-template-columns: 1fr; padding-top: 50px; text-align: center; }
   .lead { margin: 0 auto; }
   .hero-actions { justify-content: center; }
+  .qr-card { display: none; } /* already on a phone, no need to scan */
   .section { padding: 60px 16px; }
   .cards-4, .cards-3, .roadmap { grid-template-columns: 1fr; }
   .bar-row { grid-template-columns: 75px 1fr 85px; font-size: 0.82rem; }
+  .price { padding: 26px 18px; }
+  .price-facts { grid-template-columns: 1fr; }
   .game { height: 380px; }
 }
 @media (prefers-reduced-motion: reduce) {
