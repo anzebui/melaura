@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melaura — Organic Dry Milk, Coming to Lithuania</title>
+  <meta name="description" content="Melaura pre-launch page: organic non-fat dry milk powder entering the Lithuanian market." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="logo"><span class="logo-mark">M</span> Melaura</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#product">Product</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#strategy">Strategy</a>
+      <a href="#game">Play</a>
+      <a href="#team">Team</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <span class="badge">Pre-launch · Lithuania 2027</span>
+      <h1>Pure milk.<br /><em>Zero waste.</em></h1>
+      <p class="lead">Melaura brings organic non-fat dry milk powder to Lithuania — a pantry staple that lasts for months, travels light and turns into a creamy glass of milk in seconds.</p>
+      <div class="hero-actions">
+        <a href="#product" class="btn btn-primary">Discover the product</a>
+        <a href="#game" class="btn btn-ghost">Play the mini game</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="pack">
+        <div class="pack-top">Organic · Non-fat</div>
+        <div class="pack-logo">Melaura</div>
+        <div class="pack-name">Dry Milk<br />Powder</div>
+        <div class="pack-window"><span></span></div>
+        <div class="pack-weight">340 g ≈ 3.4 L of milk</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PART 1: PRODUCT ===================== -->
+  <section class="section" id="product">
+    <p class="eyebrow">Part 1 · The product</p>
+    <h2>What is Melaura dry milk?</h2>
+    <p class="section-lead">Fresh organic milk with the water and fat gently removed. What stays is the protein, calcium and taste — in a light powder you mix back with water whenever you need it.</p>
+
+    <div class="cards cards-4">
+      <article class="card reveal">
+        <div class="icon">🌱</div>
+        <h3>Organic</h3>
+        <p>Made from certified organic milk, without artificial additives or preservatives.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">⏳</div>
+        <h3>Durable</h3>
+        <p>Stays good for over a year unopened — no fridge needed until you mix it.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">♻️</div>
+        <h3>Less waste</h3>
+        <p>Mix only what you need. No half-empty cartons going sour in the fridge.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">💪</div>
+        <h3>Protein & calcium</h3>
+        <p>Non-fat and naturally rich in protein — great for baking and sports nutrition.</p>
+      </article>
+    </div>
+
+    <!-- Shelf life comparison -->
+    <div class="split">
+      <div>
+        <h3 class="sub">How long does it last?</h3>
+        <p class="muted">Approximate shelf life, unopened and stored correctly.</p>
+        <div class="bars">
+          <div class="bar-row">
+            <span class="bar-label">Fresh milk</span>
+            <div class="bar"><div class="bar-fill" data-width="3"></div></div>
+            <span class="bar-value">~1–2 weeks</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">UHT milk</span>
+            <div class="bar"><div class="bar-fill" data-width="30"></div></div>
+            <span class="bar-value">~3–6 months</span>
+          </div>
+          <div class="bar-row highlight">
+            <span class="bar-label">Melaura</span>
+            <div class="bar"><div class="bar-fill" data-width="100"></div></div>
+            <span class="bar-value">12–18 months</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mix calculator -->
+      <div class="mixer">
+        <h3 class="sub">Mix your own milk</h3>
+        <p class="muted">Drag to choose how much milk you need.</p>
+        <input type="range" id="mixRange" min="100" max="2000" step="50" value="250" aria-label="Amount of milk in millilitres" />
+        <div class="mix-result">
+          <div><strong id="mixMl">250 ml</strong><span>of milk</span></div>
+          <div class="eq">=</div>
+          <div><strong id="mixPowder">25 g</strong><span>powder</span></div>
+          <div class="eq">+</div>
+          <div><strong id="mixWater">225 ml</strong><span>water</span></div>
+        </div>
+        <div class="glass-mini"><div class="glass-mini-fill" id="mixFill"></div></div>
+      </div>
+    </div>
+
+    <!-- Use cases -->
+    <h3 class="sub center">Made for</h3>
+    <div class="chips">
+      <span class="chip">🥐 Bakeries & home baking</span>
+      <span class="chip">🏋️ Gyms & protein shakes</span>
+      <span class="chip">🏕️ Hiking & travel</span>
+      <span class="chip">🏠 Pantry backup</span>
+      <span class="chip">☕ Coffee & cocoa</span>
+    </div>
+  </section>
+
+  <!-- ===================== PART 2: MARKET ENTRY ===================== -->
+  <section class="section section-alt" id="challenges">
+    <p class="eyebrow">Part 2 · Entering Lithuania</p>
+    <h2>Obstacles we expect — and how we solve them</h2>
+    <p class="section-lead">Lithuania has a strong local dairy tradition, so dry milk is a new habit for most people. Tap a card to see our solution.</p>
+
+    <div class="cards cards-3 flip-grid">
+      <button class="flip reveal">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <span class="tag tag-risk">Obstacle</span>
+            <h3>“Real milk is fresh milk”</h3>
+            <p>Many Lithuanians prefer fresh or even raw farm milk and may see powder as second-rate.</p>
+            <span class="hint">Tap for solution →</span>
+          </div>
+          <div class="flip-back">
+            <span class="tag tag-fix">Solution</span>
+            <h3>Let people taste it</h3>
+            <p>Free dry-milk tastings in stores and markets. We position Melaura as a smart addition for baking and sports — not a replacement for fresh milk.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip reveal">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <span class="tag tag-risk">Obstacle</span>
+            <h3>Legal requirements</h3>
+            <p>Food import rules, organic certification and labelling all need to be in order before launch.</p>
+            <span class="hint">Tap for solution →</span>
+          </div>
+          <div class="flip-back">
+            <span class="tag tag-fix">Solution</span>
+            <h3>Knowledgeable stakeholders</h3>
+            <p>Work with local legal and food-safety advisors, register with the national food authority, and print all labels in Lithuanian with EU organic certification.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip reveal">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <span class="tag tag-risk">Obstacle</span>
+            <h3>Finding the first customers</h3>
+            <p>Nobody is searching for a brand they have never heard of.</p>
+            <span class="hint">Tap for solution →</span>
+          </div>
+          <div class="flip-back">
+            <span class="tag tag-fix">Solution</span>
+            <h3>Start with a clear niche</h3>
+            <p>Target bakers and athletes first. Run contests to win a year's supply and collaborate with Lithuanian fitness and baking influencers.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip reveal">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <span class="tag tag-risk">Obstacle</span>
+            <h3>Conservative view on milk</h3>
+            <p>Myths that powdered milk is “artificial” or less healthy.</p>
+            <span class="hint">Tap for solution →</span>
+          </div>
+          <div class="flip-back">
+            <span class="tag tag-fix">Solution</span>
+            <h3>Educational content</h3>
+            <p>Short videos and posts explaining how dry milk is made, its nutrition, and recipes. Ad campaigns focused on durability and less food waste.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip reveal">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <span class="tag tag-risk">Obstacle</span>
+            <h3>Backlash from local dairy fans</h3>
+            <p>Risk of being seen as a foreign brand pushing Lithuanian milk out of the market.</p>
+            <span class="hint">Tap for solution →</span>
+          </div>
+          <div class="flip-back">
+            <span class="tag tag-fix">Solution</span>
+            <h3>Complement, don't compete</h3>
+            <p>Communicate openly that we serve different needs. Partner with local bakeries and support Lithuanian events to build goodwill.</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="flip reveal">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <span class="tag tag-risk">Obstacle</span>
+            <h3>Low initial margin</h3>
+            <p>Import, logistics and marketing costs are high while sales volumes are still small.</p>
+            <span class="hint">Tap for solution →</span>
+          </div>
+          <div class="flip-back">
+            <span class="tag tag-fix">Solution</span>
+            <h3>Sell B2B first</h3>
+            <p>Sell bulk packs directly to bakeries and wholesale stores like Promo Cash&Carry. Bigger orders, fewer middlemen, better margins.</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- STRATEGY: paper principles -->
+  <section class="section" id="strategy">
+    <p class="eyebrow">Our approach</p>
+    <h2>Six secrets to successful market entry</h2>
+    <p class="section-lead">Based on the paper <em>“Secrets to Successful New Market Entry”</em> — and how Melaura applies each idea.</p>
+
+    <ol class="principles">
+      <li class="reveal">
+        <span class="num">01</span>
+        <div><h3>Treat the new market like a start-up</h3><p>Small team, fast decisions, lean budget. We test, learn and adjust before scaling.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="num">02</span>
+        <div><h3>Avoid new-market panic</h3><p>Slow first months are expected. We set realistic goals and don't drop prices in a rush.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="num">03</span>
+        <div><h3>Gut feel works if you get the facts</h3><p>Market research on similar new products in Lithuania before we commit to big decisions.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="num">04</span>
+        <div><h3>Succeed by making mistakes</h3><p>Pilot with a few bakeries and stores, collect feedback and improve quickly.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="num">05</span>
+        <div><h3>Bet big but stay focused</h3><p>One product, two clear segments — baking and sports — instead of trying to reach everyone.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="num">06</span>
+        <div><h3>Invest in your stakeholders</h3><p>Strong relationships with suppliers, retailers, advisors and influencers who know the market.</p></div>
+      </li>
+    </ol>
+
+    <!-- Roadmap -->
+    <h3 class="sub center">Launch roadmap</h3>
+    <div class="roadmap">
+      <div class="step reveal"><span class="step-dot"></span><strong>Phase 1</strong><p>Market research, legal registration, Lithuanian labels</p></div>
+      <div class="step reveal"><span class="step-dot"></span><strong>Phase 2</strong><p>B2B pilot with bakeries and Promo Cash&Carry</p></div>
+      <div class="step reveal"><span class="step-dot"></span><strong>Phase 3</strong><p>Tastings, influencer collabs and contests</p></div>
+      <div class="step reveal"><span class="step-dot"></span><strong>Phase 4</strong><p>Retail launch and online shop</p></div>
+    </div>
+  </section>
+
+  <!-- MINI GAME -->
+  <section class="section section-alt" id="game">
+    <p class="eyebrow">Take a break</p>
+    <h2>Milk Catch</h2>
+    <p class="section-lead">Catch the white powder in your glass, avoid the brown lumps. 25 seconds — how many glasses of milk can you make?</p>
+
+    <div class="game-wrap">
+      <div class="game-hud">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Time: <strong id="time">25</strong>s</span>
+        <span>Best: <strong id="best">0</strong></span>
+      </div>
+      <div class="game" id="gameArea">
+        <div class="glass" id="glass"><div class="glass-fill" id="glassFill"></div></div>
+        <div class="game-overlay" id="overlay">
+          <p id="overlayText">Move your finger or mouse to control the glass.</p>
+          <button class="btn btn-primary" id="startBtn">Start game</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <p class="eyebrow">Who we are</p>
+    <h2>The Melaura team</h2>
+    <div class="cards cards-3 team">
+      <div class="person reveal"><div class="avatar">I</div><h3>Inan</h3><span class="role">The Boss</span><p>Future planning, company goals and decision making</p></div>
+      <div class="person reveal"><div class="avatar">N</div><h3>Nursultan</h3><span class="role">Finance Manager</span><p>Budget, costs and profit</p></div>
+      <div class="person reveal"><div class="avatar">O</div><h3>Omar</h3><span class="role">Marketing Manager</span><p>Social media and Google Ads</p></div>
+      <div class="person reveal"><div class="avatar">A</div><h3>Anzelika</h3><span class="role">Sales Manager</span><p>Distribution channels</p></div>
+      <div class="person reveal"><div class="avatar">J</div><h3>Jawad</h3><span class="role">Production Manager</span><p>Overall management of processes</p></div>
+      <div class="person reveal"><div class="avatar">C</div><h3>Chaewon</h3><span class="role">Supply Chain Manager</span><p>Logistics, locations and timeline</p></div>
+    </div>
+  </section>
+
+  <!-- SIGN UP -->
+  <section class="signup">
+    <h2>Be the first to try Melaura</h2>
+    <p>Leave your email and we'll invite you to our first tasting in Vilnius.</p>
+    <form id="signupForm">
+      <input type="email" placeholder="your@email.com" required aria-label="Email address" />
+      <button class="btn btn-light" type="submit">Notify me</button>
+    </form>
+    <p class="form-msg" id="formMsg" role="status"></p>
+  </section>
+
+  <footer class="footer">
+    <p><strong>Melaura</strong> · Organic dry milk</p>
+    <p class="muted">University project — “Let's Enter a New Market!” · VGTU · Melaura is a fictional company.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
